@@ -3,7 +3,9 @@
     <div class="footer-stripe"></div>
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="../assets/logo.png" alt="M&R Brooke Transportation LLC" />
+        <RouterLink to="/">
+          <img src="../assets/logo.png" alt="M&R Brooke Transportation LLC" class="footer-logo" />
+        </RouterLink>
         <p>Licensed and insured auto transport and freight hauling across the United States. Family owned and operated out of Oklahoma.</p>
       </div>
 
@@ -52,9 +54,17 @@ const year = new Date().getFullYear()
   padding: 3rem 1.5rem 2rem;
 }
 
-.footer-brand img {
-  height: 60px;
-  margin-bottom: 1rem;
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-logo {
+  height: 90px;
+  width: auto;
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0 2px 16px rgba(0,0,0,0.9));
 }
 
 .footer-brand p {
@@ -127,6 +137,10 @@ const year = new Date().getFullYear()
   .footer-inner {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .footer-logo {
+    height: 72px;
   }
 
   .footer-bottom {

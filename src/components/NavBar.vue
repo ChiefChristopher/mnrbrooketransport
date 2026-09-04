@@ -40,27 +40,36 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   left: 0;
   right: 0;
   z-index: 100;
-  background: transparent;
+  background: rgba(10, 10, 12, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(200, 16, 46, 0.25);
   transition: background 0.3s, box-shadow 0.3s;
 }
 
 .navbar.scrolled {
-  background: rgba(10, 10, 12, 0.97);
-  box-shadow: 0 2px 20px rgba(0,0,0,0.6);
-  border-bottom: 1px solid rgba(200,16,46,0.3);
+  background: rgba(10, 10, 12, 0.98);
+  box-shadow: 0 2px 24px rgba(0,0,0,0.7);
+  border-bottom-color: rgba(200, 16, 46, 0.45);
 }
 
 .nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 78px;
 }
 
 .nav-logo img {
-  height: 52px;
+  height: 66px;
   width: auto;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.7));
+  /* Logo has white bg — use mix-blend-mode to drop it on dark navbar */
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0 2px 12px rgba(0,0,0,0.8));
+  transition: transform 0.2s;
+}
+
+.nav-logo:hover img {
+  transform: scale(1.03);
 }
 
 .nav-links {
@@ -77,6 +86,24 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   text-transform: uppercase;
   color: var(--silver-light);
   transition: color 0.2s;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--red);
+  transform: scaleX(0);
+  transition: transform 0.2s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.router-link-active:not(.nav-cta)::after {
+  transform: scaleX(1);
 }
 
 .nav-links a:hover,
@@ -85,16 +112,18 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 }
 
 .nav-links a.router-link-active:not(.nav-cta) {
-  color: var(--red);
+  color: var(--white);
 }
 
 .nav-cta {
-  background: var(--red);
+  background: var(--red) !important;
   color: var(--white) !important;
-  padding: 0.5rem 1.25rem;
+  padding: 0.55rem 1.4rem;
   clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
   transition: background 0.2s !important;
 }
+
+.nav-cta::after { display: none; }
 
 .nav-cta:hover {
   background: var(--red-dark) !important;
@@ -120,13 +149,9 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 @media (max-width: 768px) {
   .hamburger { display: flex; }
 
-  .navbar.open {
-    background: rgba(10,10,12,0.99);
-  }
-
   .nav-links {
     position: absolute;
-    top: 70px;
+    top: 78px;
     left: 0;
     right: 0;
     background: rgba(10,10,12,0.99);
@@ -139,7 +164,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   }
 
   .nav-links.open {
-    max-height: 300px;
+    max-height: 320px;
   }
 
   .nav-links a {
@@ -149,11 +174,17 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
     width: 100%;
   }
 
+  .nav-links a::after { display: none; }
+
   .nav-cta {
     clip-path: none !important;
-    margin: 0.5rem 1.5rem;
+    margin: 0.75rem 1.5rem;
     width: calc(100% - 3rem);
     text-align: center;
+  }
+
+  .nav-logo img {
+    height: 56px;
   }
 }
 </style>
