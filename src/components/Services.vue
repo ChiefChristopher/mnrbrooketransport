@@ -50,6 +50,7 @@ import haul1 from '../assets/haul1.jpg'
 import haul2 from '../assets/haul2.jpg'
 import haul3 from '../assets/haul3.jpg'
 import haul4 from '../assets/haul4.jpg'
+import fleet from '../assets/fleet.jpg'
 
 const services = [
   {
@@ -80,7 +81,7 @@ const services = [
     eyebrow: 'Auto Dealers',
     title: 'Dealer & Fleet Transport',
     icon: '🚚',
-    img: haul4,
+    img: fleet,
     desc: 'Dealerships and fleet managers count on us to move inventory quickly and cleanly. We work with your schedule and can handle multiple vehicles in a single run.',
     features: ['Multi-unit dealer moves', 'Auction to dealership transport', 'Fleet relocation', 'Recurring route options', 'Priority scheduling available'],
   },
