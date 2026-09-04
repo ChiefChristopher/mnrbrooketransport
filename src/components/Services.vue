@@ -8,7 +8,7 @@
       <div class="container page-hero-content">
         <p class="section-eyebrow">What We Do</p>
         <h1 class="section-title">Our <span>Services</span></h1>
-        <p>Professional transport for every load — from collector cars to commercial freight.</p>
+        <p>Professional vehicle transport for every load — from daily drivers to collector cars.</p>
       </div>
     </section>
 
@@ -36,7 +36,7 @@
       <div class="container">
         <p class="section-eyebrow">Coverage Area</p>
         <h2 class="section-title">All <span>48 States</span></h2>
-        <p class="coverage-sub">We run regular routes across the continental United States. Whether you need a car moved across town or freight delivered coast to coast, we have routes that work.</p>
+        <p class="coverage-sub">We run regular routes across the continental United States. Whether you need a car moved across town or a vehicle delivered coast to coast, we have routes that work.</p>
         <div class="coverage-states">
           <div class="state-pill" v-for="s in states" :key="s">{{ s }}</div>
         </div>
@@ -68,14 +68,6 @@ const services = [
     img: haul2,
     desc: 'Classic cars, Corvettes, and one-of-a-kind collector vehicles get extra attention. We understand these aren\'t just cars — they\'re investments and memories.',
     features: ['Gentle loading and unloading', 'Low ground clearance capable', 'Corvettes, muscle cars, exotics', 'Pre-haul inspection documentation', 'Extra securing points as needed'],
-  },
-  {
-    eyebrow: 'Commercial Freight',
-    title: 'Freight Hauling',
-    icon: '📦',
-    img: haul3,
-    desc: 'Need more than vehicles moved? We handle commercial freight loads across the lower 48. Consistent lanes and reliable timing make us a dependable logistics partner.',
-    features: ['Full and partial loads', 'Regular lane availability', 'Time-sensitive freight accepted', 'Commercial invoicing available', 'Transparent pricing, no surprises'],
   },
   {
     eyebrow: 'Auto Dealers',

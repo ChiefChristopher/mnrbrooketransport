@@ -8,8 +8,8 @@
       </div>
       <div class="container hero-content">
         <p class="section-eyebrow">Oklahoma's Trusted Hauler</p>
-        <h1 class="hero-title">Moving <span>America's</span><br>Vehicles & Freight</h1>
-        <p class="hero-sub">Licensed, insured, and road-hardened. M&R Brooke Transportation hauls cars, trucks, and freight across all 48 states. DOT# 4352389 | MC# 1701962</p>
+        <h1 class="hero-title">Moving <span>America's</span><br>Vehicles</h1>
+        <p class="hero-sub">Licensed, insured, and road-hardened. M&R Brooke Transportation hauls cars, trucks, and collector vehicles across all 48 states. DOT# 4352389 | MC# 1701962</p>
         <div class="hero-actions">
           <RouterLink to="/contact" class="btn-primary">Get a Free Quote</RouterLink>
           <a href="tel:4057614477" class="btn-outline">Call (405) 761-4477</a>
@@ -84,7 +84,7 @@
       <div class="cta-stripe red"></div>
       <div class="container cta-content">
         <h2>Ready to Schedule Your Haul?</h2>
-        <p>Call us today or fill out our contact form to get a free quote on car transport or freight delivery anywhere in the continental US.</p>
+        <p>Call us today or fill out our contact form to get a free quote on car or vehicle transport anywhere in the continental US.</p>
         <div class="cta-actions">
           <RouterLink to="/contact" class="btn-primary">Request a Quote</RouterLink>
           <a href="tel:4057614477" class="cta-phone">(405) 761-4477</a>
@@ -99,7 +99,6 @@
 const services = [
   { icon: '🚗', title: 'Auto Transport', desc: 'Cars, trucks, SUVs, and classics transported safely on our enclosed or open car haulers.' },
   { icon: '🏎️', title: 'Specialty Vehicles', desc: 'Classic cars, Corvettes, and collector vehicles handled with care and precision.' },
-  { icon: '📦', title: 'Freight Hauling', desc: 'Commercial freight and cargo moved efficiently across the lower 48 states.' },
   { icon: '🚚', title: 'Dealer Transport', desc: 'Fleet and dealer inventory moves handled with logistics expertise and care.' },
 ]
 

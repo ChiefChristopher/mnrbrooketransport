@@ -8,7 +8,7 @@
       <div class="container page-hero-content">
         <p class="section-eyebrow">Schedule a Haul</p>
         <h1 class="section-title">Contact <span>Us</span></h1>
-        <p>Get a free quote for auto transport or freight hauling. We'll get back to you fast.</p>
+        <p>Get a free quote for auto transport. We'll get back to you fast.</p>
       </div>
     </section>
 
@@ -92,7 +92,6 @@
                 <option>Auto Transport (multiple vehicles)</option>
                 <option>Specialty / Classic Car Transport</option>
                 <option>Dealer / Fleet Transport</option>
-                <option>Freight Hauling</option>
                 <option>Other</option>
               </select>
             </div>
@@ -109,7 +108,7 @@
             </div>
 
             <div class="form-group">
-              <label for="vehicle">Vehicle(s) / Freight Description</label>
+              <label for="vehicle">Vehicle(s) Description</label>
               <input id="vehicle" v-model="form.vehicle" type="text" placeholder="e.g. 2022 Ford F-150, 1997 Corvette, etc." />
             </div>
 
