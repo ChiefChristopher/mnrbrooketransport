@@ -13,6 +13,9 @@
         <RouterLink to="/" @click="menuOpen = false">Home</RouterLink>
         <RouterLink to="/services" @click="menuOpen = false">Services</RouterLink>
         <RouterLink to="/about" @click="menuOpen = false">About</RouterLink>
+        <a href="https://www.facebook.com/brooke.transportation" target="_blank" rel="noopener noreferrer" class="nav-facebook" aria-label="M&R Brooke Transportation on Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
         <RouterLink to="/contact" class="nav-cta" @click="menuOpen = false">Get a Quote</RouterLink>
       </nav>
     </div>
@@ -115,6 +118,20 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   color: var(--white);
 }
 
+.nav-facebook {
+  font-size: 1.4rem;
+  color: var(--silver-light);
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.nav-facebook:hover {
+  color: #1877F2;
+}
+
+.nav-facebook::after { display: none; }
+
 .nav-cta {
   background: var(--red) !important;
   color: var(--white) !important;
@@ -175,6 +192,12 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   }
 
   .nav-links a::after { display: none; }
+
+  .nav-facebook {
+    font-size: 1.6rem;
+    padding: 0.85rem 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
 
   .nav-cta {
     clip-path: none !important;
