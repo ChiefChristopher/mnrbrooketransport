@@ -97,7 +97,7 @@
 
 <script setup>
 const services = [
-  { icon: '🚗', title: 'Auto Transport', desc: 'Cars, trucks, SUVs, and classics transported safely on our enclosed or open car haulers.' },
+  { icon: '🚗', title: 'Auto Transport', desc: 'Cars, trucks, SUVs, and classics transported safely on our open car haulers.' },
   { icon: '🏎️', title: 'Specialty Vehicles', desc: 'Classic cars, Corvettes, and collector vehicles handled with care and precision.' },
   { icon: '🚚', title: 'Dealer Transport', desc: 'Fleet and dealer inventory moves handled with logistics expertise and care.' },
 ]

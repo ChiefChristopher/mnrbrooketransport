@@ -59,7 +59,7 @@ const services = [
     icon: '🚗',
     img: haul1,
     desc: 'We transport personal vehicles, family cars, trucks, and SUVs across the US. Every vehicle is secured with industry-standard tie-downs and driven by an experienced operator.',
-    features: ['Open and enclosed transport', 'Single and multi-vehicle loads', 'Door-to-door available', 'Fully insured cargo', 'Real-time communication with the driver'],
+    features: ['Open transport', 'Single and multi-vehicle loads', 'Door-to-door available', 'Fully insured cargo', 'Real-time communication with the driver'],
   },
   {
     eyebrow: 'Collector & Classic',
