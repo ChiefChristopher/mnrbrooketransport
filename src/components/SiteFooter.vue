@@ -24,6 +24,9 @@
         <a href="https://www.facebook.com/brooke.transportation" target="_blank" rel="noopener noreferrer" class="footer-facebook">
           <i class="fa-brands fa-facebook"></i> Facebook
         </a>
+        <a href="https://share.google/inb2KyXCq05tsP8vT" target="_blank" rel="noopener noreferrer" class="footer-review">
+          <i class="fa-brands fa-google"></i> Leave a Review
+        </a>
         <p class="license">DOT# 4352389 &nbsp;|&nbsp; MC# 1701962</p>
       </div>
     </div>
@@ -109,6 +112,19 @@ const year = new Date().getFullYear()
 }
 
 .footer-contact a:hover { color: var(--white); }
+
+.footer-review {
+  font-size: 0.9rem;
+  color: var(--silver);
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-review:hover {
+  color: #4285F4;
+}
 
 .footer-facebook {
   font-size: 0.9rem;

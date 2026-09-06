@@ -34,6 +34,13 @@
                 <span>mnrtransport@gmail.com</span>
               </div>
             </a>
+            <a href="https://www.facebook.com/brooke.transportation" target="_blank" rel="noopener noreferrer" class="info-item">
+              <div class="info-icon"><i class="fa-brands fa-facebook"></i></div>
+              <div>
+                <strong>Facebook</strong>
+                <span>facebook.com/brooke.transportation</span>
+              </div>
+            </a>
             <div class="info-item">
               <div class="info-icon">📍</div>
               <div>
@@ -48,6 +55,13 @@
                 <span>All 48 contiguous states</span>
               </div>
             </div>
+          </div>
+
+          <div class="review-cta">
+            <p>Happy with our service?</p>
+            <a href="https://share.google/inb2KyXCq05tsP8vT" target="_blank" rel="noopener noreferrer" class="btn-review">
+              <i class="fa-brands fa-google"></i> Leave Us a Google Review
+            </a>
           </div>
 
           <div class="license-block">
@@ -126,6 +140,9 @@
             <div class="success-icon">✅</div>
             <h3>Request Received!</h3>
             <p>Thanks, {{ form.name }}. We'll be in touch shortly at {{ form.phone || form.email }}. For immediate help, call us at <a href="tel:4057614477">(405) 761-4477</a>.</p>
+            <a href="https://share.google/inb2KyXCq05tsP8vT" target="_blank" rel="noopener noreferrer" class="btn-review-success">
+              <i class="fa-brands fa-google"></i> Leave Us a Google Review
+            </a>
             <button class="btn-outline" @click="resetForm">Submit Another Request</button>
           </div>
         </div>
@@ -402,6 +419,66 @@ function resetForm() {
 .submit-btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+/* Review CTA */
+.review-cta {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-top: 3px solid #4285F4;
+  text-align: center;
+}
+
+.review-cta p {
+  font-family: var(--ff-heading);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--silver);
+  margin-bottom: 0.75rem;
+}
+
+.btn-review {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #4285F4;
+  color: #fff;
+  font-family: var(--ff-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  transition: background 0.2s;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+}
+
+.btn-review:hover {
+  background: #2b6de0;
+}
+
+.btn-review-success {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #4285F4;
+  color: #fff;
+  font-family: var(--ff-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  transition: background 0.2s;
+  margin-bottom: 1rem;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+}
+
+.btn-review-success:hover {
+  background: #2b6de0;
 }
 
 /* Success */
