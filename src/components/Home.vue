@@ -138,6 +138,8 @@ const testimonials = [
     quote: 'This is where your review will appear. Once you receive your first Google review, paste the customer\'s words here and it will display in this card.',
   },
 ]
+
+const whyUs = [
   { icon: '⭐', title: 'Fully Licensed & Insured', desc: 'Operating under DOT# 4352389 and MC# 1701962 — your cargo is protected.' },
   { icon: '🛣️', title: 'All 48 States', desc: 'From Oklahoma to either coast, we run nationwide routes regularly.' },
   { icon: '📞', title: 'Direct Communication', desc: 'You deal directly with the owner/operator — no middlemen, no runarounds.' },
