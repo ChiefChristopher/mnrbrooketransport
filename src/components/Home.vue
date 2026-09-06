@@ -79,7 +79,7 @@
       </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- Testimonials — uncomment when real reviews are available
     <section class="testimonials">
       <div class="container">
         <p class="section-eyebrow">What Customers Say</p>
@@ -107,6 +107,7 @@
         </div>
       </div>
     </section>
+    -->
 
     <!-- CTA Banner -->
     <section class="cta-banner">
