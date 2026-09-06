@@ -79,6 +79,35 @@
       </div>
     </section>
 
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <p class="section-eyebrow">What Customers Say</p>
+        <h2 class="section-title">Trusted by <span>Real People</span></h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-card" v-for="t in testimonials" :key="t.name">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>{{ t.quote }}</blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar">{{ t.name.charAt(0) }}</div>
+              <div>
+                <strong>{{ t.name }}</strong>
+                <span>{{ t.location }}</span>
+              </div>
+              <a href="https://share.google/inb2KyXCq05tsP8vT" target="_blank" rel="noopener noreferrer" class="google-badge" title="Verified Google Review">
+                <i class="fa-brands fa-google"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-cta">
+          <a href="https://share.google/inb2KyXCq05tsP8vT" target="_blank" rel="noopener noreferrer" class="btn-review-inline">
+            <i class="fa-brands fa-google"></i> Leave Us a Review
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Banner -->
     <section class="cta-banner">
       <div class="cta-stripe red"></div>
@@ -102,7 +131,13 @@ const services = [
   { icon: '🚚', title: 'Dealer Transport', desc: 'Fleet and dealer inventory moves handled with logistics expertise and care.' },
 ]
 
-const whyUs = [
+const testimonials = [
+  {
+    name: 'Your Name Here',
+    location: 'City, State',
+    quote: 'This is where your review will appear. Once you receive your first Google review, paste the customer\'s words here and it will display in this card.',
+  },
+]
   { icon: '⭐', title: 'Fully Licensed & Insured', desc: 'Operating under DOT# 4352389 and MC# 1701962 — your cargo is protected.' },
   { icon: '🛣️', title: 'All 48 States', desc: 'From Oklahoma to either coast, we run nationwide routes regularly.' },
   { icon: '📞', title: 'Direct Communication', desc: 'You deal directly with the owner/operator — no middlemen, no runarounds.' },
@@ -365,6 +400,121 @@ const whyUs = [
   align-items: center;
   line-height: 1.2;
   letter-spacing: 0.05em;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 5rem 0;
+  background: var(--dark2);
+}
+
+.testimonials .section-title {
+  margin: 0.5rem 0 2.5rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.testimonial-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-top: 3px solid var(--red);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.testimonial-stars {
+  color: #F4B942;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+
+.testimonial-card blockquote {
+  font-size: 0.95rem;
+  color: var(--silver-light);
+  line-height: 1.75;
+  font-style: italic;
+  flex: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.author-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--blue);
+  color: var(--white);
+  font-family: var(--ff-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.testimonial-author strong {
+  display: block;
+  font-family: var(--ff-heading);
+  font-size: 0.95rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.testimonial-author span {
+  font-size: 0.8rem;
+  color: var(--silver);
+}
+
+.google-badge {
+  margin-left: auto;
+  color: #4285F4;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.google-badge:hover {
+  opacity: 1;
+}
+
+.testimonials-cta {
+  text-align: center;
+}
+
+.btn-review-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--silver-light);
+  font-family: var(--ff-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid rgba(255,255,255,0.15);
+  text-transform: uppercase;
+  transition: border-color 0.2s, color 0.2s;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+}
+
+.btn-review-inline:hover {
+  border-color: #4285F4;
+  color: #4285F4;
 }
 
 /* CTA Banner */
