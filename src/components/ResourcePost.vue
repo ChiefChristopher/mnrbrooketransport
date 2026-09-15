@@ -76,7 +76,19 @@ async function loadPost() {
     const res = await fetch(`/api/posts/${route.params.slug}`)
     if (!res.ok) throw new Error('Not found')
     post.value = await res.json()
-    document.title = `${post.value.title} | M&R Brooke Transportation LLC`
+
+    // Update page title and og tags dynamically
+    const title = `${post.value.title} | M&R Brooke Transportation LLC`
+    const desc = post.value.excerpt || `${post.value.title} — tips and guides from M&R Brooke Transportation LLC, Oklahoma City's trusted auto hauler.`
+    const url = `https://www.mnrbrooketransport.com/resources/${post.value.slug}`
+
+    document.title = title
+    document.querySelector('meta[name="description"]')?.setAttribute('content', desc)
+    document.querySelector('meta[property="og:title"]')?.setAttribute('content', title)
+    document.querySelector('meta[property="og:description"]')?.setAttribute('content', desc)
+    document.querySelector('meta[property="og:url"]')?.setAttribute('content', url)
+    document.querySelector('meta[property="twitter:title"]')?.setAttribute('content', title)
+    document.querySelector('meta[property="twitter:description"]')?.setAttribute('content', desc)
   } catch {
     post.value = null
   } finally {

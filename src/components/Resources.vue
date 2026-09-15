@@ -72,6 +72,12 @@ function formatDate(dateStr) {
 }
 
 onMounted(async () => {
+  // Set og tags for resources page
+  document.querySelector('meta[property="og:title"]')?.setAttribute('content', 'Resources | M&R Brooke Transportation LLC')
+  document.querySelector('meta[property="og:description"]')?.setAttribute('content', 'Auto transport tips, guides, and news from Oklahoma City\'s trusted car hauler. M&R Brooke Transportation LLC.')
+  document.querySelector('meta[property="twitter:title"]')?.setAttribute('content', 'Resources | M&R Brooke Transportation LLC')
+  document.querySelector('meta[property="twitter:description"]')?.setAttribute('content', 'Auto transport tips and guides from M&R Brooke Transportation LLC.')
+
   try {
     const res = await fetch('/api/posts')
     if (!res.ok) throw new Error('Failed to load posts')
