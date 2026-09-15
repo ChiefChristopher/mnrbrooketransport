@@ -2,7 +2,7 @@
   <div>
     <section class="page-hero">
       <div class="page-hero-bg">
-        <img src="../assets/haul3.jpg" alt="M&R Brooke Transportation services" />
+        <img src="../assets/haul3.webp" alt="M&R Brooke Transportation LLC auto transport and vehicle hauling services" />
         <div class="page-hero-overlay"></div>
       </div>
       <div class="container page-hero-content">
@@ -46,11 +46,11 @@
 </template>
 
 <script setup>
-import haul1 from '../assets/haul1.jpg'
-import haul2 from '../assets/haul2.jpg'
-import haul3 from '../assets/haul3.jpg'
-import haul4 from '../assets/haul4.jpg'
-import fleet from '../assets/fleet.jpg'
+import haul1 from '../assets/haul1.webp'
+import haul2 from '../assets/haul2.webp'
+import haul3 from '../assets/haul3.webp'
+import haul4 from '../assets/haul4.webp'
+import fleet from '../assets/fleet.webp'
 
 const services = [
   {

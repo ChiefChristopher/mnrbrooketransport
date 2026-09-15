@@ -2,7 +2,7 @@
   <div>
     <section class="page-hero">
       <div class="page-hero-bg">
-        <img src="../assets/haul4.jpg" alt="M&R Brooke Transportation owner operator" />
+        <img src="../assets/haul4.webp" alt="M&R Brooke Transportation LLC owner operator family-owned auto transport Oklahoma" />
         <div class="page-hero-overlay"></div>
       </div>
       <div class="container page-hero-content">
@@ -14,7 +14,7 @@
     <section class="about-story">
       <div class="container about-grid">
         <div class="about-img-col">
-          <img src="../assets/haul3.jpg" alt="M&R Brooke Transportation truck on the road" class="about-main-img" />
+          <img src="../assets/haul3.webp" alt="M&R Brooke Transportation LLC white Ford Super Duty with car hauler on US highway" class="about-main-img" />
           <div class="about-stat-card">
             <div class="stat" v-for="s in stats" :key="s.label">
               <span class="stat-val">{{ s.val }}</span>

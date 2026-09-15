@@ -3,7 +3,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-bg">
-        <img src="../assets/haul2.jpg" alt="M&R Brooke Transportation car hauler" class="hero-img" />
+        <img src="../assets/haul2.webp" alt="M&R Brooke Transportation LLC open car hauler trailer loaded with vehicles in Oklahoma" class="hero-img" />
         <div class="hero-overlay"></div>
       </div>
       <div class="container hero-content">
@@ -45,10 +45,10 @@
     <!-- Photo Gallery Strip -->
     <section class="gallery">
       <div class="gallery-grid">
-        <img src="../assets/haul1.jpg" alt="Multi-vehicle car hauler transport" />
-        <img src="../assets/haul2.jpg" alt="Car hauler with Corvette and F-150" />
-        <img src="../assets/haul3.jpg" alt="Ford Super Duty with car hauler trailer" />
-        <img src="../assets/haul4.jpg" alt="Car hauler loaded with vehicles" />
+        <img src="../assets/haul1.webp" alt="M&R Brooke Transportation multi-vehicle open car hauler transporting cars and trucks" />
+        <img src="../assets/haul2.webp" alt="Car hauler transporting Corvette and Ford F-150 on open trailer" />
+        <img src="../assets/haul3.webp" alt="M&R Brooke Transportation white Ford Super Duty towing loaded car hauler trailer" />
+        <img src="../assets/haul4.webp" alt="M&R Brooke Transportation owner operator with loaded vehicle transport trailer" />
       </div>
     </section>
 
@@ -69,7 +69,7 @@
           </ul>
         </div>
         <div class="why-image">
-          <img src="../assets/haul3.jpg" alt="M&R Brooke Transportation on the road" />
+          <img src="../assets/haul3.webp" alt="M&R Brooke Transportation LLC Ford Super Duty hauling vehicles across the US" />
           <div class="why-image-badge">
             <span>Family Owned</span>
             <span>&</span>

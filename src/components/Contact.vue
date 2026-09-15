@@ -2,7 +2,7 @@
   <div>
     <section class="page-hero">
       <div class="page-hero-bg">
-        <img src="../assets/haul2.jpg" alt="Contact M&R Brooke Transportation" />
+        <img src="../assets/haul2.webp" alt="Contact M&R Brooke Transportation LLC for a free auto transport quote" />
         <div class="page-hero-overlay"></div>
       </div>
       <div class="container page-hero-content">
