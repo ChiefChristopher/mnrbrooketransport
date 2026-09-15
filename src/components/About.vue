@@ -24,9 +24,9 @@
         </div>
         <div class="about-text">
           <p class="section-eyebrow">Family Owned & Operated</p>
-          <h2 class="section-title">Oklahoma Roots,<br><span>Nationwide Reach</span></h2>
-          <p>M&R Brooke Transportation LLC is a family-owned auto transport company based in Oklahoma. We built this business on the road — learning every mile, every load, and every delivery what it means to do this work the right way.</p>
-          <p>We operate as an owner-operator, which means when you call us, you reach the people doing the hauling. There's no dispatch center, no corporate phone tree — just a driver who cares about getting your vehicle delivered safely and on time.</p>
+          <h2 class="section-title">Oklahoma City Roots,<br><span>Nationwide Reach</span></h2>
+          <p>M&R Brooke Transportation LLC is a family-owned auto transport company based in the Oklahoma City area. We built this business on the road — learning every mile, every load, and every delivery what it means to do this work the right way.</p>
+          <p>We operate as an owner-operator out of OKC, which means when you call us, you reach the people doing the hauling. There's no dispatch center, no corporate phone tree — just a driver who cares about getting your vehicle delivered safely and on time.</p>
           <p>We're fully licensed under DOT# 4352389 and MC# 1701962, and we carry the insurance coverage to back every haul. Whether you're shipping a daily driver across two states or need a classic Corvette moved with care, you can trust M&R Brooke to treat your vehicle like it's our own.</p>
           <div class="about-credentials">
             <div class="cred" v-for="c in credentials" :key="c.label">
@@ -75,6 +75,7 @@ const stats = [
 const credentials = [
   { icon: '🏛️', label: 'USDOT Number', val: '4352389' },
   { icon: '📋', label: 'MC Number', val: '1701962' },
+  { icon: '📍', label: 'Based In', val: 'Oklahoma City, OK' },
   { icon: '📞', label: 'Direct Line', val: '(405) 761-4477' },
   { icon: '✉️', label: 'Email', val: 'mnrtransport@gmail.com' },
 ]

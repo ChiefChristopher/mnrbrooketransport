@@ -17,7 +17,7 @@
         <!-- Contact Info -->
         <div class="contact-info">
           <h2 class="section-title">Reach <span>Us Direct</span></h2>
-          <p class="contact-intro">We're owner-operators — when you call, you reach the people doing the hauling. No middleman, no runaround.</p>
+          <p class="contact-intro">We're an Oklahoma City-based owner-operator — when you call, you reach the people doing the hauling. No middleman, no runaround.</p>
 
           <div class="info-items">
             <a href="tel:4057614477" class="info-item info-cta">
@@ -45,7 +45,7 @@
               <div class="info-icon">📍</div>
               <div>
                 <strong>Based In</strong>
-                <span>Oklahoma, USA</span>
+                <span>Oklahoma City, OK</span>
               </div>
             </div>
             <div class="info-item">

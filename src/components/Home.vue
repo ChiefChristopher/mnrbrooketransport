@@ -7,9 +7,9 @@
         <div class="hero-overlay"></div>
       </div>
       <div class="container hero-content">
-        <p class="section-eyebrow">Oklahoma's Trusted Hauler</p>
+        <p class="section-eyebrow">Oklahoma City's Trusted Hauler</p>
         <h1 class="hero-title">Moving <span>America's</span><br>Vehicles</h1>
-        <p class="hero-sub">Licensed, insured, and road-hardened. M&R Brooke Transportation hauls cars, trucks, and collector vehicles across all 48 states. DOT# 4352389 | MC# 1701962</p>
+        <p class="hero-sub">Licensed, insured, and road-hardened. M&R Brooke Transportation is Oklahoma City's owner-operated auto hauler — moving cars, trucks, and collector vehicles across all 48 states. DOT# 4352389 | MC# 1701962</p>
         <div class="hero-actions">
           <RouterLink to="/contact" class="btn-primary">Get a Free Quote</RouterLink>
           <a href="tel:4057614477" class="btn-outline">Call (405) 761-4477</a>
@@ -142,7 +142,7 @@ const testimonials = [
 
 const whyUs = [
   { icon: '⭐', title: 'Fully Licensed & Insured', desc: 'Operating under DOT# 4352389 and MC# 1701962 — your cargo is protected.' },
-  { icon: '🛣️', title: 'All 48 States', desc: 'From Oklahoma to either coast, we run nationwide routes regularly.' },
+  { icon: '🛣️', title: 'All 48 States', desc: 'From Oklahoma City to either coast, we run nationwide routes regularly.' },
   { icon: '📞', title: 'Direct Communication', desc: 'You deal directly with the owner/operator — no middlemen, no runarounds.' },
   { icon: '⏱️', title: 'On-Time Delivery', desc: 'We respect your schedule. Pickups and deliveries you can count on.' },
 ]

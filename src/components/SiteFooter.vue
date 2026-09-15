@@ -6,7 +6,7 @@
         <RouterLink to="/">
           <img src="../assets/logo.png" alt="M&R Brooke Transportation LLC" class="footer-logo" />
         </RouterLink>
-        <p>Licensed and insured auto transport and freight hauling across the United States. Family owned and operated out of Oklahoma.</p>
+        <p>Licensed and insured auto transport based in Oklahoma City, OK. Family owned and operated, serving all 48 contiguous states.</p>
       </div>
 
       <div class="footer-links">
