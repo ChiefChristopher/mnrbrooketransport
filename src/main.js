@@ -7,6 +7,9 @@ import Home from './components/Home.vue'
 import Contact from './components/Contact.vue'
 import Services from './components/Services.vue'
 import About from './components/About.vue'
+import Resources from './components/Resources.vue'
+import ResourcePost from './components/ResourcePost.vue'
+import Admin from './components/Admin.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -42,6 +45,27 @@ const router = createRouter({
         title: 'Get a Free Quote | M&R Brooke Transportation LLC – OKC',
         description: 'Request a free auto transport quote from M&R Brooke Transportation in Oklahoma City. We haul cars, trucks, and collector vehicles across the US. Call (405) 761-4477.'
       }
+    },
+    {
+      path: '/resources',
+      component: Resources,
+      meta: {
+        title: 'Resources | M&R Brooke Transportation LLC',
+        description: 'Auto transport tips, guides, and news from M&R Brooke Transportation LLC. Oklahoma City\'s trusted car hauler.'
+      }
+    },
+    {
+      path: '/resources/:slug',
+      component: ResourcePost,
+      meta: {
+        title: 'Resources | M&R Brooke Transportation LLC',
+        description: 'Auto transport tips and guides from M&R Brooke Transportation LLC.'
+      }
+    },
+    {
+      path: '/admin',
+      component: Admin,
+      meta: { title: 'Admin | M&R Brooke Transportation LLC' }
     },
   ],
   scrollBehavior() {

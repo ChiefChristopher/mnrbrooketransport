@@ -13,6 +13,7 @@
         <RouterLink to="/" @click="menuOpen = false">Home</RouterLink>
         <RouterLink to="/services" @click="menuOpen = false">Services</RouterLink>
         <RouterLink to="/about" @click="menuOpen = false">About</RouterLink>
+        <RouterLink to="/resources" @click="menuOpen = false">Resources</RouterLink>
         <a href="https://www.facebook.com/brooke.transportation" target="_blank" rel="noopener noreferrer" class="nav-facebook" aria-label="M&R Brooke Transportation on Facebook">
           <i class="fa-brands fa-facebook"></i>
         </a>
