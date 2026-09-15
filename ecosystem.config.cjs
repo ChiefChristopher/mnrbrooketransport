@@ -17,6 +17,7 @@ module.exports = {
       script: 'server/index.js',
       cwd: './',
       interpreter: 'node',
+      node_args: '--env-file=server/.env',
       env: { NODE_ENV: 'production' },
       watch: false,
       autorestart: true,
