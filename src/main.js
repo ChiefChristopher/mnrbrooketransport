@@ -79,6 +79,14 @@ router.afterEach((to) => {
   if (desc && to.meta.description) {
     desc.setAttribute('content', to.meta.description)
   }
+  // Canonical tag — tells Google the authoritative URL for each page
+  let canonical = document.querySelector('link[rel="canonical"]')
+  if (!canonical) {
+    canonical = document.createElement('link')
+    canonical.setAttribute('rel', 'canonical')
+    document.head.appendChild(canonical)
+  }
+  canonical.setAttribute('href', `https://www.mnrbrooketransport.com${to.path}`)
 })
 
 createApp(App).use(router).mount('#app')
