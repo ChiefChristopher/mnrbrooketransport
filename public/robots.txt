@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /*?go=
+Disallow: /*?amp=
+Disallow: /*&amp=
+Disallow: /*?referrer=
 
 Sitemap: https://www.mnrbrooketransport.com/sitemap.xml
