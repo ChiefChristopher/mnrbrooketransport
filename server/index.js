@@ -24,6 +24,37 @@ function auth(req, res, next) {
 
 // ── Public routes ────────────────────────────────────────────
 
+// GET /api/sitemap.xml — dynamic sitemap (Nginx maps /sitemap.xml here)
+app.get('/api/sitemap.xml', async (req, res) => {
+  const base = 'https://www.mnrbrooketransport.com'
+  const pages = [
+    { path: '/', priority: '1.0', freq: 'monthly' },
+    { path: '/services', priority: '0.8', freq: 'monthly' },
+    { path: '/about', priority: '0.7', freq: 'monthly' },
+    { path: '/contact', priority: '0.9', freq: 'monthly' },
+    { path: '/resources', priority: '0.7', freq: 'weekly' },
+  ]
+  try {
+    const [posts] = await pool.execute(
+      'SELECT slug, updated_at, created_at FROM posts WHERE published = 1 ORDER BY created_at DESC'
+    )
+    const urls = pages.map(p =>
+      `  <url>\n    <loc>${base}${p.path}</loc>\n    <changefreq>${p.freq}</changefreq>\n    <priority>${p.priority}</priority>\n  </url>`
+    )
+    for (const post of posts) {
+      const d = new Date(post.updated_at || post.created_at).toISOString().split('T')[0]
+      urls.push(
+        `  <url>\n    <loc>${base}/resources/${encodeURIComponent(post.slug)}</loc>\n    <lastmod>${d}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>`
+      )
+    }
+    res.type('application/xml').send(
+      `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`
+    )
+  } catch (err) {
+    res.status(500).send('Sitemap unavailable')
+  }
+})
+
 // GET /api/posts — published posts only
 app.get('/api/posts', async (req, res) => {
   try {
